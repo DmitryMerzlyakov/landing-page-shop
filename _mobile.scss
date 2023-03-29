@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        &-header {
+            margin-bottom: 32px;
+        }
+    }
+     
+    .header {
+        padding-top: 32px;
+        &__input {
+            display: none;
+        }
+        &__page {
+            display: none;
+        }
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .for {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .logo__link {
+        font-size: 18px;
+        line-height: 22px;  
+        width: 99px;
+        height: 22px;
+    }
+
+    .mob-header {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .bascet {
+        align-items: center;
+        &-form {
+            width: 343px;
+            height: 556px;
+        }
+        &-box{
+            width: 343px;
+            &__name {
+                display: none;
+            }
+            &__button{
+                display: flex;
+                margin-top: 0;
+                gap: 10px;
+            }
+            &__items {
+                width: 343px;
+                height: 167px;
+                left: 16px;
+                top: 492px;
+                display: flex;
+                &-text {
+                    width: 253px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+
+    .content {
+        &__h1 {
+            text-align: center;
+        }
+        &__description {
+            font-weight: 400;
+            width: 253px;
+            height: 45px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__h2 {
+            padding-left: 9px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__h3 {
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 18px;
+            &__sell{
+                font-size: 18px;
+            }
+        }
+        &__description {
+            font-size: 14px;
+        }
+    }
+    
+    .box-img {
+        display: none;
+    }
+
+    .value__input {
+        margin-left: 15px;
+    }
+
+    .catalog {
+        &__select {
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__nav {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            }
+    }
+
+    #sorting {
+        margin-bottom: 32px;
+    }    
+
+    .footer {
+        padding-bottom: 32px;
+        column-gap: 100px;
+        row-gap: 40px;
+        height: 363.5px;
+        &__contact {
+            grid-gap: 12px; 
+        }
+    }
+    
+    .market__sell-content {
+        justify-content: center;
+    }
+}
+

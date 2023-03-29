@@ -1,0 +1,172 @@
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.bascet-header {
+    background-image: url(img/basket.jpg);
+}
+
+.bascet__h1 {
+    padding-bottom: 126px;
+}
+
+.bascet {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); ;
+    gap: 32px;
+    margin-bottom: 64px;
+
+        &-box {
+        grid-column: span 8;
+                
+        &__name {
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            padding-top: 25px;
+            padding-bottom: 32px;
+            border-top: 0.5px solid #CACDD8;
+            &-text {
+                margin-left: 32px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        &__button {
+            margin-top: 50px;
+        }
+
+    }
+
+    &-form {
+        width: 376px;
+        height: 556px;  
+        row-gap: 32px;
+        grid-column: span 4;
+        background: #F7F6F6;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &__text {
+            padding-top: 30px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+        }
+        &__button {
+            width: 289px;
+            border: 1px solid #040404;
+            border-radius: 20px;
+            height: 37px;
+            left: 121px;
+            top: 983px;
+            transition: all 2s;
+            &:hover {
+                animation: myAnim 2s ease 0s 1 normal forwards;
+                box-shadow: 0 0 10px #000000;
+            }
+        }
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;     
+    line-height: 20px;
+    color: #000000;
+}
+
+.box-img {
+    width: 173px;
+    height: 173px;
+    left: 122px;
+    top: 523px;
+}
+
+.link {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 210%;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-right: 30px;
+    transition: color 1s;
+    &:hover {
+        color: #c4c4c4;
+    }
+}
+
+.form-input {
+    background-color: #F7F6F6;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    height: 31px;
+    left: 837px;
+    top: 523px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-content: flex-start;
+    width: 228px;
+    width: 288px;
+    height: 143px;
+}
+
+.value__input {  
+    padding-left: 10px;
+    margin-left: 120px;
+    background: #F7F6F6;
+    border: none;
+    width: 51px;
+    height: 31px;
+    left: 837px;
+    top: 523px;
+}
+
+.button-items {
+    background-color: #fff;
+    &:hover {
+        background-color: #000000;
+        color: #ffff;
+    }
+}

@@ -1,0 +1,63 @@
+.catalog {
+    background-image: url(img/logo__catalog.jpg);
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+    
+    &__h1 {
+        padding-bottom: 126px;
+    }
+    
+    &__select {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline   ;
+    }
+    &__nav {
+        display: flex;
+        font-display: row;
+        gap: 10px;
+        margin-top: 64px;
+        margin-bottom: 41px;
+    }
+}
+
+#sorting {
+    width: 288px;
+    height: 41px;
+    left: 1032px;
+    top: 464px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #888888;
+    padding-left: 14px;
+    transition: color 2s;
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    &:not([multiple]) {
+    padding-right: 1.5em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.8em) 0.8em;
+    background-size: 0.85em auto;
+    background-image: url(img/57055.png);
+    }
+    &:hover {
+        color: #000000;
+        border-color: #000000;
+    }
+}
+
